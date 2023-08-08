@@ -1,0 +1,9 @@
+
+        <h2>We played <%= @yourMove %>!</h2>
+        <h2>They played <%= @pcMove %>!</h2>
+
+        <% if @result == "won!" or @result == "lost!" %>
+        <h2>You <%= @result %></h2>
+        <% else %>
+        <h2>We <%= @result %></h2>
+        <% end %>
